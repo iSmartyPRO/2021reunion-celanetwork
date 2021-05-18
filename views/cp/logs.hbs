@@ -1,0 +1,45 @@
+<!-- CONTENT -->
+<div id="content" data-uk-height-viewport="expand: true">
+  <div class="uk-container uk-container-expand">
+    <!-- panel -->
+    <div class="uk-width-1-1@l">
+      <div class="uk-card uk-card-default uk-card-large uk-card-hover">
+        <div class="uk-card-header">
+          <div class="uk-grid uk-grid-small">
+            <div class="uk-width-auto">
+              <h4>Logs (Web Application Visits/Activity)</h4>
+            </div>
+          </div>
+        </div>
+        <div class="uk-card-body">
+          <table class="uk-table uk-table-small uk-table-divider">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Entry Point</th>
+                <th>IP</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>Browser</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#logData}}
+              <tr>
+                <td>{{ formatDate createdAt}}</td>
+                <td>{{ entryPoint }}</td>
+                <td>{{ ip }}</td>
+                <td>{{ country }}</td>
+                <td>{{ city }}</td>
+                <td>{{ browser }}</td>
+                <td>{{ userAgent }}</td>
+              </tr>
+              {{/logData}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /CONTENT -->

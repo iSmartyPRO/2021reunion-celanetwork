@@ -1,0 +1,59 @@
+<!-- CONTENT -->
+<div id="content" data-uk-height-viewport="expand: true">
+  <div class="uk-container uk-container-expand">
+    <!-- panel -->
+    <div class="uk-width-1-1@l">
+      <div class="uk-card uk-card-default uk-card-large uk-card-hover">
+        <div class="uk-card-header">
+          <div class="uk-grid uk-grid-small">
+            <div class="uk-width-auto">
+              <h4>Application Form for {{application.fullName}}</h4>
+            </div>
+          </div>
+        </div>
+        <div class="uk-card-body">
+          <div class="uk-margin-top"><span class="uk-text-bold">Full name:</span> {{application.fullName}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Network name:</span> {{application.networkName}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Network class year:</span> {{application.networkClassYear}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Country of citizenship:</span>
+            {{application.countryCitizen}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Current residence:</span> {{application.DoB}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Date of Birth:</span> {{application.currentResidence}}
+          </div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Job title:</span> {{application.title}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Company name:</span> {{application.companyName}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Company Industry:</span> {{application.companyIndustry}}
+          </div>
+          <div class="uk-margin-top"><span class="uk-text-bold">E-mail:</span> {{application.email}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Phone Number:</span> {{application.phone}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Please share your updated bio:</span><br>
+            {{application.bio}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">All sessions are conducted in English, so full fluency
+              in English is critical.
+              If English is not your native language, how would you describe your ability to communicate in
+              English?:</span><br> {{application.isEnglish}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Please describe why you want to be a facilitator and why
+              you think you would
+              be an effective facilitator.:</span><br> {{application.whyYouFacilitator}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Please describe your previous facilitating/teaching
+              experiences:
+              (paid/non-paid). If any, please let us know when, with whom and the nature of your role.:</span><br>
+            {{application.experienceInfo}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">If you have been a facilitator at one of the Network
+              Academies, please tell us
+              which class and who were your co-facilitators:</span><br> {{application.whoFacilitator}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Please provide 2 references (with contact details) as to
+              your ability to
+              facilitate. If at all possible, make these references members of one of these affiliated
+              networks.:</span><br> {{application.references}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">If accepted to facilitate, are we authorized to use your
+              photos and bio within
+              our promotional materials?:</span><br> {{ternary application.authPhotos 'Yes' 'No'}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Application Subbmited Date:</span><br>
+            {{formatDate application.createdAt}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /CONTENT -->

@@ -1,0 +1,52 @@
+<p>Dear {{username}},</p>
+
+<p>You received new application form from https://{{appUrl}} </p>
+<p style="color: #f00"><b>Details:</b></p>
+<hr>
+<p><b>Full name:</b> {{fullName}}</p>
+<p><b>Network name:</b> {{networkName}}</p>
+<p><b>Network class year:</b> {{networkClassYear}}</p>
+<p><b>Country of citizenship:</b>
+  {{countryCitizen}}</p>
+<p><b>Current residence:</b> {{currentResidence}}</p>
+<p><b>Date of Birth:</b> {{DoB}}
+</p>
+<p><b>Job title:</b> {{title}}</p>
+<p><b>Company name:</b> {{companyName}}</p>
+<p><b>Company Industry:</b> {{companyIndustry}}
+</p>
+<p><b>E-mail:</b> {{email}}</p>
+<p><b>Phone Number:</b> {{phone}}</p>
+<p><b>Please share your updated bio:</b><br>
+  {{bio}}</p>
+<p><b>All sessions are conducted in English, so full fluency
+    in English is critical.
+    If English is not your native language, how would you describe your ability to communicate in
+    English?:</b><br> {{isEnglish}}</p>
+<p><b>Please describe why you want to be a facilitator and why
+    you think you would
+    be an effective facilitator.:</b><br> {{whyYouFacilitator}}</p>
+<p><b>Please describe your previous facilitating/teaching
+    experiences:
+    (paid/non-paid). If any, please let us know when, with whom and the nature of your role.:</b><br>
+  {{experienceInfo}}</p>
+<p><b>If you have been a facilitator at one of the Network
+    Academies, please tell us
+    which class and who were your co-facilitators:</b><br> {{whoFacilitator}}</p>
+<p><b>Please provide 2 references (with contact details) as to
+    your ability to
+    facilitate. If at all possible, make these references members of one of these affiliated
+    networks.:</b><br> {{references}}</p>
+<p><b>If accepted to facilitate, are we authorized to use your
+    photos and bio within
+    our promotional materials?:</b><br> {{ternary authPhotos 'Yes' 'No'}}</p>
+<p><b>Application Subbmited Date:</b><br>
+  {{formatDate createdAt}}</p>
+</p>
+
+<hr>
+<br><br><br>
+View this application form online -> <a
+  href="https://{{appUrl}}/cp/application/{{id}}">https://{{appUrl}}/cp/application/{{id}}</a>
+
+<p>P.S> Before open link, please authorize in system.

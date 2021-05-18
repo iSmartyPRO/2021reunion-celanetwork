@@ -1,0 +1,287 @@
+<div class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height" id="home" uk-height-viewport>
+    <!-- TOP CONTAINER -->
+    <div class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-medium-top"
+        data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
+        <div class="uk-width-1-2@s" data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
+            <h3 class="uk-text-primary uk-margin-small-bottom">CALL FOR </h3>
+            <h1 class="uk-margin-remove-top"><strong>CELA REUNION 2021</strong></h1>
+            <p class="subtitle-text uk-visible@s">Wednesday, August 11, 2021 – Friday, August 13, 2021</p>
+            {{#if showAppForm}}
+            {{!-- Countdown date --}}
+            <div class="uk-grid-small uk-child-width-auto uk-padding-top" uk-grid
+                uk-countdown="date: 2021-08-11T23:59:59+00:00">
+                <div>
+                    <div class="uk-countdown-number uk-countdown-days"></div>
+                    <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+                </div>
+                <div class="uk-countdown-separator">:</div>
+                <div>
+                    <div class="uk-countdown-number uk-countdown-hours"></div>
+                    <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+                </div>
+                <div class="uk-countdown-separator">:</div>
+                <div>
+                    <div class="uk-countdown-number uk-countdown-minutes"></div>
+                    <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+                </div>
+                <div class="uk-countdown-separator">:</div>
+                <div>
+                    <div class="uk-countdown-number uk-countdown-seconds"></div>
+                    <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+                </div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+    <!-- /TOP CONTAINER -->
+    <!-- TOP IMAGE -->
+    <img src="/assets/georgia-1232023_1920.jpg" data-srcset="/assets/georgia-1232023_1920.jpg 640w,
+				/assets/georgia-1232023_1920.jpg 960w,
+				/assets/georgia-1232023_1920.jpg 1200w,
+				/assets/georgia-1232023_1920.jpg 2000w" data-sizes="100vw" data-src="/assets/georgia-1232023_1920.jpg" alt=""
+        data-uk-cover data-uk-img data-uk-parallax="opacity: 1,0.1; easing:0">
+    <!-- /TOP IMAGE -->
+</div>
+<div class="uk-position-bottom-center uk-position-medium uk-position-z-index uk-text-center">
+    <a href="#about" data-uk-scroll="duration: 500" data-uk-icon="icon: arrow-down; ratio: 2"></a>
+</div>
+</div>
+<div class="uk-section" id="about">
+    <div class="uk-container">
+        <h2 class="uk-text-center uk-margin-remove cela-text-blue"><strong>CALL FOR REUNION 2021
+                ACADEMY</strong></h2>
+        <h4 class="uk-text-center uk-text-italic uk-margin-remove cela-text-blue"><strong>KUTAISI INTERNATIONAL
+                UNIVERSITY</strong></h4>
+        <h4 class="uk-text-center uk-text-italic uk-margin-remove cela-text-blue"><strong>Kutaisi, Georgia</strong></h4>
+        <h4 class="uk-text-center uk-margin-remove cela-text-red"><strong>11 - 13 AUGUST 2021</strong></h4>
+        <p></p>
+        <div>
+            <p>It gives us great pleasure to announce that this summer we are planning to hold the CELA 15 Leadership
+                Academy which was postponed last year due to the global pandemic. CELA Board members approved Kutaisi
+                International University in Kutaisi, Georgia as a new host for the Leadership Academy. We are excited
+                about our new venue and have no doubt that CELA 15 participants will have a transformative experience at
+                the Academy scheduled for August 2-11, 2021.</p>
+
+            <p>We ask all CELA 15 finalists to confirm their participation to me by replying to info@celanetwork.org.
+                Please include your full name, country and contact information in the body of the message. A call for
+                facilitators will go out soon. All CELA, SIBF, MELA and SEALA members will be invited to apply and be a
+                part of the Academy this summer. CELA is also thrilled to announce that the Georgia team is planning to
+                host a reunion at the end of the Academy which will also be held at Kutaisi International University.
+                The preliminary dates for the reunion are August 11-13, 2021. The overlapping of the reunion with the
+                last day of the Academy will give CELA members a chance to meet the newest members and show the power of
+                CELA in their first days as full members of our growing network.
+            </p>
+            <p>We look forward to seeing many of you in person at the Academy and the reunion. You will be hearing more
+                from our team in the coming weeks. </p>
+
+
+            <h4 class="uk-text-center uk-text-bold cela-text-red uk-margin-remove-bottom">DEADLINE FOR SUBMISSION: 23
+                MAY 2021</h4>
+            <h4 class="uk-text-center uk-text-bold uk-margin-remove">You will be notified of the committee’s decision no
+                later than 29 May 2021</h4>
+        </div>
+        <div class="uk-margin-medium-top uk-text-italic">
+            <h4 class="uk-text-center uk-text-bold uk-margin-remove-bottom cela-text-red">IMPORTANT!</h4>
+            CELA 15 Academy will be held amid the ongoing global pandemic which will require safety measures that will
+            help prevent the spread of infections among participants, facilitators, faculty and staff. Everybody
+            planning to be a part of the CELA 15 Academy should expect to be tested upon the arrival to the KIU campus.
+            Additional testing will likely be done during the Academy. Everybody will also be asked to be vaccinated if
+            COVID-19 vaccines are available in the countries before the Academy. Additional restrictions may also be
+            placed in terms of arrivals to and departures from the KIU campus to prevent any risks of infections.
+        </div>
+    </div>
+</div>
+{{#if showAppForm }}
+<hr class="uk-divider-icon">
+<div class="uk-section" id="applicationForm">
+    <div class="uk-container">
+        <h2 class="uk-text-center" style="color: #043191"><strong>APPLICATION FORM FOR <br>REUNION 2021</strong></h2>
+        <br><br><br>
+        <form class="uk-form" action="" method="POST" id="applicationFormData">
+            <fieldset class="uk-fieldset">
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Full Name <span
+                            class="uk-text-danger">*</span></label>
+                    <input class="uk-input" type="text" placeholder="First Name, Last Name" name="fullName"
+                        id="fullName">
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Network name <span
+                            class="uk-text-danger">*</span></label>
+                    <select class="uk-select" name="networkName" id="networkName">
+                        <option value="null">Select your network name</option>
+                        {{#networks}}
+                        <option value="{{this}}">{{this}}</option>
+                        {{/networks}}
+                    </select>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Network class year <span
+                            class="uk-text-danger">*</span></label>
+                    <select class="uk-select" name="networkClassYear" id="networkClassYear">
+                        <option value="null">Select your network year</option>
+                        {{#classYears}}
+                        <option value="{{this}}">{{this}}</option>
+                        {{/classYears}}
+                    </select>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Country of citizenship <span
+                            class="uk-text-danger">*</span></label>
+                    <select class="uk-select" name="countryCitizen" id="countryCitizen">
+                        <option value="null">Select your country of citizenship</option>
+                        {{#countries}}
+                        <option value="{{this}}">{{this}}</option>
+                        {{/countries}}
+                    </select>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Current residence <span
+                            class="uk-text-danger">*</span></label>
+                    <input class="uk-input" type="text" placeholder="Your answer" name="currentResidence"
+                        id="currentResidence">
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Date of Birth <span
+                            class="uk-text-danger">*</span></label>
+                    <input class="uk-input" type="text" placeholder="Your answer" name="DoB" id="DoB">
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Job title <span
+                            class="uk-text-danger">*</span></label>
+                    <input class="uk-input" type="text" placeholder="Your answer" name="title" id="title">
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Company name <span
+                            class="uk-text-danger">*</span></label>
+                    <input class="uk-input" type="text" placeholder="Your answer" name="companyName" id="companyName">
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Company Industry <span
+                            class="uk-text-danger">*</span></label>
+                    <input class="uk-input" type="text" placeholder="Your answer" name="companyIndustry"
+                        id="companyIndustry">
+                </div>
+                <div class="uk-margin uk-margin-remove-top">
+                    <label class="uk-form-label" for="form-stacked-select">E-mail <span
+                            class="uk-text-danger">*</span></label>
+                    <input class="uk-input" type="text" placeholder="Your answer" name="email" id="email">
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Phone Number <span
+                            class="uk-text-danger">*</span></label>
+                    <input class="uk-input" type="text"
+                        placeholder="Enter your phone number (include a country & city code)" name="phone" id="phone">
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Please share your updated bio <span
+                            class="uk-text-danger">*</span></label>
+                    <textarea class="uk-textarea" rows="5" placeholder="Your answer (no longer than 250 words)"
+                        name="bio" id="bio"></textarea>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">All sessions are conducted in English, so
+                        full fluency in English is critical. If English is not your native language, how would you
+                        describe your ability to communicate in English? <span class="uk-text-danger">*</span></label>
+                    <textarea class="uk-textarea" rows="5" placeholder="Your answer" name="isEnglish"
+                        id="isEnglish"></textarea>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Please describe why you want to be a
+                        facilitator and why you think you would be an effective facilitator. <span
+                            class="uk-text-danger">*</span></label>
+                    <textarea class="uk-textarea" rows="5" placeholder="Your answer" name="whyYouFacilitator"
+                        id="whyYouFacilitator"></textarea>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Please describe your previous
+                        facilitating/teaching/moderating/training experiences: (paid/non-paid). If any, please let us
+                        know when, with whom and the nature of your role. * <span
+                            class="uk-text-danger">*</span></label>
+                    <textarea class="uk-textarea" rows="5" placeholder="Your answer" name="experienceInfo"
+                        id="experienceInfo"></textarea>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">If you have been a facilitator at one of the
+                        Network Academies, please tell us which class and who were your co-facilitators. <span
+                            class="uk-text-danger">*</span></label>
+                    <textarea class="uk-textarea" rows="5" placeholder="Your answer" name="whoFacilitator"
+                        id="whoFacilitator"></textarea>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Please provide 2 references (with contact
+                        details) as to your ability to facilitate. If at all possible, make these references members of
+                        one of these affiliated networks. <span class="uk-text-danger">*</span></label>
+                    <textarea class="uk-textarea" rows="5" placeholder="Your answer" name="references"
+                        id="references"></textarea>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">
+                        If accepted to facilitate, are we authorized to use your photos and bio within our promotional
+                        materials? <span class="uk-text-danger">*</span>
+                    </label>
+                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                        <label><input class="uk-radio" type="radio" name="authPhotos" id="acceptYes" value="yes">
+                            Yes</label>
+                        <label><input class="uk-radio" type="radio" name="authPhotos" id="acceptNo" value="no">
+                            No</label>
+                    </div>
+                </div>
+
+                <hr class="uk-divider-icon">
+
+                <div class="uk-margin uk-text-italic">
+                    <p>I understand that the CELA Academy is an intensive leadership development program that requires
+                        my full-time commitment as a facilitator for nearly 2 weeks, up to 14 hours a day, in the
+                        service of the program, the participants and their needs. I further understand that I have a
+                        special responsibility to be a positive leadership role model and network ambassador and that my
+                        actions will be reflective of my commitment at all times. The attendance period includes the
+                        Facilitator Academy, starting with the opening dinner on the evening of 30 July, and the entire
+                        10-day Academy through graduation and the final dinner on 11 August. <span
+                            class="uk-text-danger">Additionally, I commit to participate in the monthly pre-LA
+                            Facilitator Corps virtual meetings.</span></p>
+                    <p>I also understand that I am responsible for arranging my travel to and from Tbilis and that CELA
+                        will provide transportation to and from the airport to the University, and my lodging and food
+                        expenses from 30 July to 12 August. All other expenses are my responsibility.</p>
+                </div>
+                <div class="uk-margin">
+                    <div class="uk-grid">
+                        <div class="uk-width-auto@m uk-first-column">
+                            <input class="uk-checkbox cela-checkbox-red" type="checkbox" id="chkAgreement"
+                                name="chkAgreement">
+                        </div>
+                        <div class="uk-width-expand@m uk-text-light uk-text-small">
+                            I understand and commit to the terms stated above: <span class="uk-text-danger">*</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin uk-padding-small cela-error uk-hidden"
+                    id="applicationErrorBox">
+                    <p>Please complete all fields!</p>
+                </div>
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <input type="submit" href="#" class="uk-button uk-button-large uk-width-1-1 uk-button-primary"
+                    id="sendBtn" value="Submit Application" disabled></input>
+
+            </fieldset>
+    </div>
+
+
+
+
+    </form>
+
+
+</div>
+{{/if}}
+</div>
+
+<div class="uk-section uk-hidden" id="congratsWindow">
+    <div class="uk-container">
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin">
+            <h3 class="uk-card-title uk-text-center uk-text-success uk-text-bold">Congratulation!</h3>
+            <p class="uk-text-center">Your Application Form is Submitted</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<!-- CONTENT -->
+<div id="content" data-uk-height-viewport="expand: true">
+  <div class="uk-container uk-container-expand">
+    <!-- panel -->
+    <div class="uk-width-1-1@l">
+      <div class="uk-card uk-card-default uk-card-large uk-card-hover">
+        <div class="uk-card-header">
+          <div class="uk-grid uk-grid-small">
+            <div class="uk-width-auto">
+              <h4>Users</h4>
+            </div>
+          </div>
+        </div>
+        <div class="uk-card-body">
+          <table class="uk-table uk-table-small uk-table-divider">
+            <thead>
+              <tr>
+                <th>Full Name</th>
+                <th>E-mail</th>
+                <th>Notifications</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#users}}
+              <tr>
+                <td>{{ name}}</td>
+                <td>{{ email }}</td>
+                <td>{{ ternary notification "Enabled" "Disabled" }}</td>
+              </tr>
+              {{/users}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /CONTENT -->

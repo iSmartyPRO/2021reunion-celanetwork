@@ -1,0 +1,90 @@
+<!-- overlay -->
+<div class="uk-position-cover uk-overlay-primary"></div>
+<!-- /overlay -->
+<div class="uk-position-bottom-center uk-position-small uk-visible@m uk-position-z-index">
+  <span class="uk-text-small uk-text-muted">© 2021 CELA Network </span>
+</div>
+<div class="uk-width-medium uk-padding-small uk-position-z-index" uk-scrollspy="cls: uk-animation-fade">
+
+  <div class="uk-text-center uk-margin uk-padding-remove uk-margin-remove">
+    <img src="/assets/cela_logo_white.svg" alt="Logo">
+    <div class="uk-text-center uk-padding">CONTROL PANEL</div>
+  </div>
+  {{#if loginError}}
+  <div>
+    <div class="uk-text-center uk-text-danger">
+
+      <p class="alert">{{loginError}}</p>
+    </div>
+  </div>
+  {{/if}}
+  <!-- login -->
+  <form class="toggle-class" action="/auth/login" method="post">
+    <fieldset class="uk-fieldset">
+      <div class="uk-margin-small">
+        <div class="uk-inline uk-width-1-1">
+          <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
+          <input class="uk-input uk-border-pill" required placeholder="E-mail" type="text" name="email" id="email">
+        </div>
+      </div>
+      <div class="uk-margin-small">
+        <div class="uk-inline uk-width-1-1">
+          <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
+          <input class="uk-input uk-border-pill" required placeholder="Password" type="password" name="password"
+            id="password">
+        </div>
+      </div>
+      <div class="uk-margin-bottom">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">LOG IN</button>
+      </div>
+    </fieldset>
+  </form>
+  <!-- /login -->
+  {{#if allowRegistration}}
+  <!-- New Account -->
+  <form class="toggle-class" action="/auth/registration" method="POST" hidden>
+    <div class="uk-margin-small">
+      <div class="uk-inline uk-width-1-1">
+        <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
+        <input class="uk-input uk-border-pill" placeholder="Name" required type="text" name="name" id="name">
+      </div>
+      <div class="uk-inline uk-width-1-1">
+        <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
+        <input class="uk-input uk-border-pill" placeholder="E-mail" required type="text" name="nemail" id="nemail">
+      </div>
+    </div>
+    <div class="uk-margin-bottom">
+      <input type="hidden" name="_csrf" value="{{csrfToken}}">
+      <button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">New Account</button>
+    </div>
+  </form>
+  <!-- /New account -->
+  {{/if}}
+  <!-- recover password -->
+  <form class="toggle-class" action="/auth/reset" method="POST" hidden>
+    <div class="uk-margin-small">
+      <div class="uk-inline uk-width-1-1">
+        <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
+        <input class="uk-input uk-border-pill" placeholder="E-mail" required type="text" name="remail" id="remail">
+      </div>
+    </div>
+    <div class="uk-margin-bottom">
+      <input type="hidden" name="_csrf" value="{{csrfToken}}">
+      <button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">SEND PASSWORD</button>
+    </div>
+  </form>
+  <!-- /recover password -->
+
+  <!-- action buttons -->
+  <div>
+    <div class="uk-text-center">
+      <a class="uk-link-reset uk-text-small toggle-class"
+        data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade">Forgot your password?</a>
+      <a class="uk-link-reset uk-text-small toggle-class"
+        data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade" hidden><span
+          data-uk-icon="arrow-left"></span> Back to Login</a>
+    </div>
+  </div>
+  <!-- action buttons -->
+</div>
