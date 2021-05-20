@@ -1,0 +1,9 @@
+{
+    "feeKutaisi": {
+        "singleRoomKutaisi": "Single room + meals + event (only single rooms are available in Kutaisi)"
+    },
+    "feeSvaneti": {
+        "singleRoomSvaneti": "Single room + meals + event",
+        "sharedRoomSvaneti": "Shared room + meals + event (Shared rooms are available only for couples due to covid-related protocol)"
+    }
+}

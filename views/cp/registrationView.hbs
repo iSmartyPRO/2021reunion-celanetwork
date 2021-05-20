@@ -1,0 +1,108 @@
+<!-- CONTENT -->
+<div id="content" data-uk-height-viewport="expand: true">
+  <div class="uk-container uk-container-expand">
+    <!-- panel -->
+    <div class="uk-width-1-1@l">
+      <div class="uk-card uk-card-default uk-card-large uk-card-hover">
+        <div class="uk-card-header">
+          <div class="uk-grid uk-grid-small">
+            <div class="uk-width-auto">
+              <h4>Registration Details for
+                {{registration.firstName}}
+                {{registration.lastName}}</h4>
+            </div>
+          </div>
+        </div>
+        <div class="uk-card-body">
+          <div class="uk-margin-top"><span class="uk-text-bold">First name:</span><br
+            />
+            {{registration.firstName}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Last name:</span><br
+            />
+            {{registration.lastName}}</div>
+          <div class="uk-margin-top"><span
+              class="uk-text-bold"
+            >Country:</span><br />
+            {{registration.country}}</div>
+          <div class="uk-margin-top"><span
+              class="uk-text-bold"
+            >Network:</span><br />
+            {{registration.networkName}}</div>
+          <div class="uk-margin-top"><span
+              class="uk-text-bold"
+            >Mobile:</span><br />
+            {{registration.mobile}}</div>
+          <div class="uk-margin-top"><span
+              class="uk-text-bold"
+            >E-mail:</span><br />
+            {{registration.email}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Passport Number:</span><br
+            />
+            {{registration.passportNumber}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Special dietary
+              restrictions:</span><br />
+            {{ternary
+              registration.dietaryRestrictions
+              registration.dietaryRestrictions
+              "Empty, no data"
+            }}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Registration fee
+              for CELA Kutaisi Reunion:</span><br />
+            {{feeKutaisi}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Registration fee
+              for CELA Svaneti Post-Reunion:</span><br />
+            {{feeSvaneti}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Spouse/partner
+              Full name:</span><br />
+            {{ternary
+              registration.aFullName
+              registration.aFullName
+              "Empty, no data"
+            }}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Spouse/partner
+              Occupation/Company:</span><br />
+            {{ternary
+              registration.aCompany
+              registration.aCompany
+              "Empty, no data"
+            }}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Spouse/partner
+              E-mail:</span><br />
+            {{ternary aEmail aEmail "Empty, no data"}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Spouse/partner
+              Phone Number:</span><br />
+            {{ternary
+              registration.aPhone
+              registration.aPhone
+              "Empty, no data"
+            }}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Optional
+              Activity:</span><br />
+            {{ternary
+              registration.optionalActivity
+              registration.optionalActivity
+              "Not selected"
+            }}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">COVID
+              vaccinated?:</span><br />
+            {{ternary registration.covidVaccinated "Yes" "No"}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">COVID plan to
+              get vaccinated?:</span><br />
+            {{ternary registration.covidDoVaccinate "Yes" "No"}}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Total Fee:</span><br
+            />
+            {{totalFee
+              registration.networkName
+              registration.feeKutaisi
+              registration.feeSvaneti
+              registration.aFullName
+            }}</div>
+          <div class="uk-margin-top"><span class="uk-text-bold">Application
+              Submited Date:</span><br />
+            {{formatDate registration.createdAt}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /CONTENT -->

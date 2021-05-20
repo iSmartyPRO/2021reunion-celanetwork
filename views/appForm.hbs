@@ -2,36 +2,69 @@
     <!-- TOP CONTAINER -->
     <div class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-medium-top"
         data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
-        <div class="uk-width-1-2@s" data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
-            <h3 class="uk-text-primary uk-margin-small-bottom">CALL FOR </h3>
-            <h1 class="uk-margin-remove-top"><strong>CELA REUNION 2021</strong></h1>
-            <p class="subtitle-text uk-visible@s">Wednesday, August 11, 2021 – Friday, August 13, 2021</p>
-            {{#if showAppForm}}
-            {{!-- Countdown date --}}
-            <div class="uk-grid-small uk-child-width-auto uk-padding-top" uk-grid
-                uk-countdown="date: 2021-08-11T23:59:59+00:00">
-                <div>
-                    <div class="uk-countdown-number uk-countdown-days"></div>
-                    <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+        <div uk-grid>
+            <div class="uk-width-1-2@s" data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
+                <h3 class="uk-text-primary uk-margin-small-bottom">CALL FOR </h3>
+                <h2 class="uk-margin-remove-top"><strong>CELA KUTAISI REUNION</strong></h2>
+                <p class="subtitle-text uk-visible@s">AUGUST 11-14, 2021 (KUTAISI, GEORGIA)</p>
+                {{#if showAppForm}}
+                {{!-- Countdown date --}}
+                <div class="uk-grid-small uk-child-width-auto uk-padding-top" uk-grid
+                    uk-countdown="date: 2021-08-11T00:00:00+00:00">
+                    <div>
+                        <div class="uk-countdown-number uk-countdown-days"></div>
+                        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+                    </div>
+                    <div class="uk-countdown-separator">:</div>
+                    <div>
+                        <div class="uk-countdown-number uk-countdown-hours"></div>
+                        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+                    </div>
+                    <div class="uk-countdown-separator">:</div>
+                    <div>
+                        <div class="uk-countdown-number uk-countdown-minutes"></div>
+                        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+                    </div>
+                    <div class="uk-countdown-separator">:</div>
+                    <div>
+                        <div class="uk-countdown-number uk-countdown-seconds"></div>
+                        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+                    </div>
                 </div>
-                <div class="uk-countdown-separator">:</div>
-                <div>
-                    <div class="uk-countdown-number uk-countdown-hours"></div>
-                    <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
-                </div>
-                <div class="uk-countdown-separator">:</div>
-                <div>
-                    <div class="uk-countdown-number uk-countdown-minutes"></div>
-                    <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
-                </div>
-                <div class="uk-countdown-separator">:</div>
-                <div>
-                    <div class="uk-countdown-number uk-countdown-seconds"></div>
-                    <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
-                </div>
+                {{/if}}
             </div>
-            {{/if}}
+            <div class="uk-width-1-2@s" data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
+                <h3 class="uk-text-primary uk-margin-small-bottom">CALL FOR </h3>
+                <h2 class="uk-margin-remove-top"><strong>CELA SVANETI POST-REUNION</strong></h2>
+                <p class="subtitle-text uk-visible@s">AUGUST 14–17, 2021 (SVANETI, GEORGIA)</p>
+                {{#if showAppForm}}
+                {{!-- Countdown date --}}
+                <div class="uk-grid-small uk-child-width-auto uk-padding-top" uk-grid
+                    uk-countdown="date: 2021-08-14T00:00:00+00:00">
+                    <div>
+                        <div class="uk-countdown-number uk-countdown-days"></div>
+                        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+                    </div>
+                    <div class="uk-countdown-separator">:</div>
+                    <div>
+                        <div class="uk-countdown-number uk-countdown-hours"></div>
+                        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+                    </div>
+                    <div class="uk-countdown-separator">:</div>
+                    <div>
+                        <div class="uk-countdown-number uk-countdown-minutes"></div>
+                        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+                    </div>
+                    <div class="uk-countdown-separator">:</div>
+                    <div>
+                        <div class="uk-countdown-number uk-countdown-seconds"></div>
+                        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+                    </div>
+                </div>
+                {{/if}}
+            </div>
         </div>
+
     </div>
     <!-- /TOP CONTAINER -->
     <!-- TOP IMAGE -->
@@ -48,119 +81,119 @@
 </div>
 <div class="uk-section" id="about">
     <div class="uk-container">
-        <h2 class="uk-text-center uk-margin-remove cela-text-blue"><strong>CALL FOR REUNION 2021
-                ACADEMY</strong></h2>
-        <h4 class="uk-text-center uk-text-italic uk-margin-remove cela-text-blue"><strong>KUTAISI INTERNATIONAL
-                UNIVERSITY</strong></h4>
-        <h4 class="uk-text-center uk-text-italic uk-margin-remove cela-text-blue"><strong>Kutaisi, Georgia</strong></h4>
-        <h4 class="uk-text-center uk-margin-remove cela-text-red"><strong>11 - 13 AUGUST 2021</strong></h4>
+        <div uk-grid>
+            <div class="uk-width-1-2@s">
+                <h2 class="uk-text-center uk-margin-remove cela-text-blue">
+                    <strong>
+                        CELA KUTAISI REUNION<br>
+                        KUTAISI, GEORGIA<br>
+                        AUGUST 11-14, 2021
+                    </strong>
+                </h2>
+            </div>
+            <div class="uk-width-1-2@s">
+                <h2 class="uk-text-center uk-margin-remove cela-text-blue">
+                    <strong>
+                        CELA SVANETI POST-REUNION<br>
+                        SVANETI, GEORGIA<br>
+                        AUGUST 14 – 17, 2021
+                    </strong>
+                </h2>
+            </div>
+        </div>
+        <p></p>
+        <h4 class="uk-text-center uk-text-italic uk-margin-remove cela-text-red"><strong>REGISTRATION DEADLINE<br>FOR BOTH PROGRAMS: MAY 31 2021</strong></h4>
         <p></p>
         <div>
-            <p>It gives us great pleasure to announce that this summer we are planning to hold the CELA 15 Leadership
-                Academy which was postponed last year due to the global pandemic. CELA Board members approved Kutaisi
-                International University in Kutaisi, Georgia as a new host for the Leadership Academy. We are excited
-                about our new venue and have no doubt that CELA 15 participants will have a transformative experience at
-                the Academy scheduled for August 2-11, 2021.</p>
+            <p>Dear friends,</p>
+            <p>The CELA Georgia team is excited to host CELA Kutaisi Reunion (August 11-14) and CELA Svaneti Post-Reunion (August 14-17) and create a platform for fellows of four sister networks to connect, exchange experiences and make friends. </p>
+            <p>The CELA Reunion 2021will be welcoming our friends from CELA, MELA, SEALA and SIBF and offering business development opportunities with show-casing of the beautiful country Georgia. </p>
 
-            <p>We ask all CELA 15 finalists to confirm their participation to me by replying to info@celanetwork.org.
-                Please include your full name, country and contact information in the body of the message. A call for
-                facilitators will go out soon. All CELA, SIBF, MELA and SEALA members will be invited to apply and be a
-                part of the Academy this summer. CELA is also thrilled to announce that the Georgia team is planning to
-                host a reunion at the end of the Academy which will also be held at Kutaisi International University.
-                The preliminary dates for the reunion are August 11-13, 2021. The overlapping of the reunion with the
-                last day of the Academy will give CELA members a chance to meet the newest members and show the power of
-                CELA in their first days as full members of our growing network.
+            <p>
+                <strong>CELA Kutaisi Reunion Program</strong><br>
+                August 11 - Arrivals, Welcome Dinner<br>
+                August 12 - High-Level Conference <br>
+                August 13 - Sightseeing and Professional Program<br>
+                August 14 - Departure
             </p>
-            <p>We look forward to seeing many of you in person at the Academy and the reunion. You will be hearing more
-                from our team in the coming weeks. </p>
-
-
-            <h4 class="uk-text-center uk-text-bold cela-text-red uk-margin-remove-bottom">DEADLINE FOR SUBMISSION: 23
-                MAY 2021</h4>
-            <h4 class="uk-text-center uk-text-bold uk-margin-remove">You will be notified of the committee’s decision no
-                later than 29 May 2021</h4>
+            <p>
+            <strong>CELA Post-Reunion Program*</strong><br>
+            August 14 – Departure from Kutaisi to Svaneti <br>
+            August 15 & 16 – Cultural Program in Svaneti<br>
+            August 17 – Departure from Svaneti at noon to Kutaisi <br>
+            <i>*Limited seats! CELA can accommodate only 40 people. Registrations are on a first-come, first-served basis. So, register early!</i>
+            </p>
+            <p>Detailed program with additional information will be provided later. If you plan to attend one or both programs, please fill out an online-registration form by May 31, 2021.</p>
         </div>
-        <div class="uk-margin-medium-top uk-text-italic">
-            <h4 class="uk-text-center uk-text-bold uk-margin-remove-bottom cela-text-red">IMPORTANT!</h4>
-            CELA 15 Academy will be held amid the ongoing global pandemic which will require safety measures that will
-            help prevent the spread of infections among participants, facilitators, faculty and staff. Everybody
-            planning to be a part of the CELA 15 Academy should expect to be tested upon the arrival to the KIU campus.
-            Additional testing will likely be done during the Academy. Everybody will also be asked to be vaccinated if
-            COVID-19 vaccines are available in the countries before the Academy. Additional restrictions may also be
-            placed in terms of arrivals to and departures from the KIU campus to prevent any risks of infections.
+        <br>
+        <div>
+            <h3 class="cela-text-blue uk-text-center uk-text-bold">LOGISTICS INSTRUCTIONS</h3>
+            <h4 class="cela-text-blue">ACCOMMODATION IN KUTAISI</h4>
+            <p>Reunion participants will stay in the dormitory of Kutaisi International University. Please visit <a href="https://www.kiu.edu.ge">www.kiu.edu.ge</a>  for more information.</p>
+            <h4 class="cela-text-blue">ACCOMODATION IN SVANETI</h4>
+            <p> Post-Reunion participants will be placed in two hotels in Svaneti - <a href="https://www.facebook.com/reservation.shgedimestia">Hotel Shgedi Mestia</a> and <a href="https://www.facebook.com/HotelLahili">Hotel Lahili</a>.</p>
+            <p>For those arriving early or leaving late, and needing help with extra accommodation, please contact Zara Janibekyan at <a href="mailto:zara@celanetwork.org">zara@celanetwork.org</a>. Every additional night at Kutaisi International University will cost 30USD for single and 35USD for double accommodation.</p>
+            <h4 class="cela-text-blue">ARRIVAL AND DEPARTURE</h4>
+            <p><a href="http://www.tbilisiairport.com">Tbilisi International Airport</a></p>
+            <p><a href="http://www.kutaisi.aero">Kutaisi International Airport</a></p>
+            <p><a href="http://batumiairport.com">Batumi International Airport</a></p>
+            <p><i>CELA provides all airport pick-ups and drop offs. Your flight information will be requested later.</i></p>
+            <h4 class="cela-text-blue">TRANSPORTATION AND AIRFARE</h4>
+            <p>Participants are responsible for their own travel arrangements for arrival to and from Kutaisi/Tbilisi/Batumi to their home.</p>
+            <h4 class="cela-text-blue">PAYMENT INSTRUCTIONS</h4>
+            <p>The registration fee payment should be done through bank transfer, PayPal or credit card. For all financial issues, please contact Zara Janibekyan at <a href="mailto:zara@celanetwork.org">zara@celanetwork.org</a>.  <span class="cela-text-red">The deadline for the payment is MAY 31, 2021.</span></p>
+            <h4 class="cela-text-blue">VISAS</h4>
+            <p>Please check if your passport requires visa to enter Georgia.  If you do require a visa, then please start the process as soon as possible. Please visit <a href="https://www.geoconsul.gov.ge/en/visaInformation">https://www.geoconsul.gov.ge/en/visaInformation</a> to apply for your e-visa to Georgia.</p>
+            <p>Should you have any questions related to visa matters please contact KIU member <a href="mailto:mariam.naneishvili@kiu.edu.ge">mariam.naneishvili@kiu.edu.ge</a> and CC <a href="mailto:Kadyr.T@celanetwork.org">Kadyr.T@celanetwork.org</a> and <a href="mailto:zarina@celanetwork.org">zarina@celanetwork.org</a>.</p>
         </div>
     </div>
 </div>
 {{#if showAppForm }}
 <hr class="uk-divider-icon">
-<div class="uk-section" id="applicationForm">
+<div class="uk-section" id="registrationForm">
     <div class="uk-container">
-        <h2 class="uk-text-center" style="color: #043191"><strong>APPLICATION FORM FOR <br>REUNION 2021</strong></h2>
+        <h2 class="uk-text-center uk-text-bold cela-text-blue">REGISTRATION FORM</h2>
         <br><br><br>
-        <form class="uk-form" action="" method="POST" id="applicationFormData">
+        <form class="uk-form" action="" method="POST" id="registrationFormData">
+            <h4 class="cela-text-blue">PERSONAL INFORMATION</h4>
             <fieldset class="uk-fieldset">
                 <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Full Name <span
+                    <label class="uk-form-label" for="form-stacked-select">First Name <span
                             class="uk-text-danger">*</span></label>
-                    <input class="uk-input" type="text" placeholder="First Name, Last Name" name="fullName"
-                        id="fullName">
+                    <input class="uk-input" type="text" placeholder="First Name" name="firstName"
+                        id="firstName">
                 </div>
                 <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Network name <span
+                    <label class="uk-form-label" for="form-stacked-select">Last Name <span
                             class="uk-text-danger">*</span></label>
-                    <select class="uk-select" name="networkName" id="networkName">
-                        <option value="null">Select your network name</option>
-                        {{#networks}}
-                        <option value="{{this}}">{{this}}</option>
-                        {{/networks}}
-                    </select>
+                    <input class="uk-input" type="text" placeholder="Last Name" name="lastName"
+                        id="lastName">
                 </div>
                 <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Network class year <span
+                    <label class="uk-form-label" for="form-stacked-select">Country<span
                             class="uk-text-danger">*</span></label>
-                    <select class="uk-select" name="networkClassYear" id="networkClassYear">
-                        <option value="null">Select your network year</option>
-                        {{#classYears}}
-                        <option value="{{this}}">{{this}}</option>
-                        {{/classYears}}
-                    </select>
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Country of citizenship <span
-                            class="uk-text-danger">*</span></label>
-                    <select class="uk-select" name="countryCitizen" id="countryCitizen">
-                        <option value="null">Select your country of citizenship</option>
+                    <select class="uk-select" name="country" id="country">
+                        <option value="null">Select your country</option>
                         {{#countries}}
                         <option value="{{this}}">{{this}}</option>
                         {{/countries}}
                     </select>
                 </div>
                 <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Current residence <span
+                    <label class="uk-form-label" for="form-stacked-select">Network<span
                             class="uk-text-danger">*</span></label>
-                    <input class="uk-input" type="text" placeholder="Your answer" name="currentResidence"
-                        id="currentResidence">
+                    <select class="uk-select" name="networkName" id="networkName">
+                        <option value="null">Select your network</option>
+                        {{#networks}}
+                        <option value="{{this}}">{{this}}</option>
+                        {{/networks}}
+                    </select>
                 </div>
                 <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Date of Birth <span
+                    <label class="uk-form-label" for="form-stacked-select">Mobile Number <span
                             class="uk-text-danger">*</span></label>
-                    <input class="uk-input" type="text" placeholder="Your answer" name="DoB" id="DoB">
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Job title <span
-                            class="uk-text-danger">*</span></label>
-                    <input class="uk-input" type="text" placeholder="Your answer" name="title" id="title">
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Company name <span
-                            class="uk-text-danger">*</span></label>
-                    <input class="uk-input" type="text" placeholder="Your answer" name="companyName" id="companyName">
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Company Industry <span
-                            class="uk-text-danger">*</span></label>
-                    <input class="uk-input" type="text" placeholder="Your answer" name="companyIndustry"
-                        id="companyIndustry">
+                    <input class="uk-input" type="text"
+                        placeholder="Enter your mobile number (please include a country code)" name="mobile" id="mobile">
                 </div>
                 <div class="uk-margin uk-margin-remove-top">
                     <label class="uk-form-label" for="form-stacked-select">E-mail <span
@@ -168,82 +201,108 @@
                     <input class="uk-input" type="text" placeholder="Your answer" name="email" id="email">
                 </div>
                 <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Phone Number <span
+                    <label class="uk-form-label" for="form-stacked-select">Passport Number <span
                             class="uk-text-danger">*</span></label>
-                    <input class="uk-input" type="text"
-                        placeholder="Enter your phone number (include a country & city code)" name="phone" id="phone">
+                    <input class="uk-input" type="text" placeholder="Enter your Passport Number" name="passportNumber"
+                        id="passportNumber">
                 </div>
                 <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Please share your updated bio <span
-                            class="uk-text-danger">*</span></label>
-                    <textarea class="uk-textarea" rows="5" placeholder="Your answer (no longer than 250 words)"
-                        name="bio" id="bio"></textarea>
+                    <label class="uk-form-label" for="form-stacked-select">Please indicate if you have any special dietary restrictions</label>
+                    <textarea class="uk-textarea" rows="5" placeholder="Your answer" name="dietaryRestrictions"
+                        id="dietaryRestrictions"></textarea>
+                </div>
+                <br>
+                <div class="uk-margin">
+                    <h4 class="cela-text-blue">REGISTRATION FEE FOR CELA, MELA AND SEALA MEMBERS</h4>
+                </div>
+                <p>The cost per person is indicated below. Please work out your total and include it in the payment options.</p>
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-italic" for="form-stacked-select">Registration fee for CELA Kutaisi Reunion</label>
+                    <select class="uk-select" name="feeKutaisi" id="feeKutaisi">
+                        <option value="null">Select option</option>
+                        <option value="singleRoomKutaisi">Single room + meals + event (only single rooms are available in Kutaisi)</option>
+                    </select>
                 </div>
                 <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">All sessions are conducted in English, so
-                        full fluency in English is critical. If English is not your native language, how would you
-                        describe your ability to communicate in English? <span class="uk-text-danger">*</span></label>
-                    <textarea class="uk-textarea" rows="5" placeholder="Your answer" name="isEnglish"
-                        id="isEnglish"></textarea>
+                    <label class="uk-form-label uk-text-italic" for="form-stacked-select">Registration fee for CELA Svaneti Post-Reunion*</label>
+                    <select class="uk-select" name="feeSvaneti" id="feeSvaneti">
+                        <option value="null">Select option</option>
+                        <option value="singleRoomSvaneti">Single room + meals + event</option>
+                        <option value="sharedRoomSvaneti">Shared room + meals + event (Shared rooms are available only for couples due to covid-related protocol)</option>
+                    </select>
                 </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Please describe why you want to be a
-                        facilitator and why you think you would be an effective facilitator. <span
-                            class="uk-text-danger">*</span></label>
-                    <textarea class="uk-textarea" rows="5" placeholder="Your answer" name="whyYouFacilitator"
-                        id="whyYouFacilitator"></textarea>
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Please describe your previous
-                        facilitating/teaching/moderating/training experiences: (paid/non-paid). If any, please let us
-                        know when, with whom and the nature of your role. * <span
-                            class="uk-text-danger">*</span></label>
-                    <textarea class="uk-textarea" rows="5" placeholder="Your answer" name="experienceInfo"
-                        id="experienceInfo"></textarea>
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">If you have been a facilitator at one of the
-                        Network Academies, please tell us which class and who were your co-facilitators. <span
-                            class="uk-text-danger">*</span></label>
-                    <textarea class="uk-textarea" rows="5" placeholder="Your answer" name="whoFacilitator"
-                        id="whoFacilitator"></textarea>
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">Please provide 2 references (with contact
-                        details) as to your ability to facilitate. If at all possible, make these references members of
-                        one of these affiliated networks. <span class="uk-text-danger">*</span></label>
-                    <textarea class="uk-textarea" rows="5" placeholder="Your answer" name="references"
-                        id="references"></textarea>
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-select">
-                        If accepted to facilitate, are we authorized to use your photos and bio within our promotional
-                        materials? <span class="uk-text-danger">*</span>
-                    </label>
-                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                        <label><input class="uk-radio" type="radio" name="authPhotos" id="acceptYes" value="yes">
-                            Yes</label>
-                        <label><input class="uk-radio" type="radio" name="authPhotos" id="acceptNo" value="no">
-                            No</label>
+                <span class="uk-text-small uk-text-meta">*If due to COVID, the region will be locked down 48 hours prior to the trip, 20% of fee will not be reimbursed.</span>
+                <h4 class="cela-text-blue">If you are planning to invite a spouse/partner, please provide information below:</h4>
+                <fieldset class="uk-fieldset">
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-select">Full name</label>
+                        <input class="uk-input" type="text" placeholder="First Name and Last Name" name="aFullName" id="aFullName">
                     </div>
+                    <div class="uk-margin uk-hidden" id="fieldACompany">
+                        <label class="uk-form-label" for="form-stacked-select">Occupation/Company</label>
+                        <input class="uk-input" type="text" placeholder="Your answer" name="aCompany" id="aCompany">
+                    </div>
+                    <div class="uk-margin uk-margin-remove-top uk-hidden" id="fieldAEmail">
+                        <label class="uk-form-label" for="form-stacked-select">E-mail</label>
+                        <input class="uk-input" type="text" placeholder="Your answer" name="aEmail" id="aEmail">
+                    </div>
+                    <div class="uk-margin uk-hidden" id="fieldAPhone">
+                        <label class="uk-form-label" for="form-stacked-select">Phone Number</label>
+                        <input class="uk-input" type="text"
+                            placeholder="Enter spouse/partner phone number (please include a country code)" name="aPhone" id="aPhone">
+                    </div>
+
+                </fieldset>
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-italic" for="form-stacked-select">Optional activities will be offered in the morning of August 17 in Svaneti. Please select one or none of the options below. Fees must be paid at the sight.</label>
+                    <select class="uk-select" name="optionalActivity" id="optionalActivity">
+                        <option value="null">None</option>
+                        {{#optionalActivity}}
+                        <option value="{{this}}">{{this}}</option>
+                        {{/optionalActivity}}
+                    </select>
                 </div>
+                <div class="uk-margin">
+                    <p><u>Your registration fee includes</u> accommodation meals, meeting materials, transport and cultural activities during the Reunion and Post-Reunion, if selected.</p>
+
+                    <p>For any questions pertaining to the Reunion and post-Reunion, feel free to contact:</p>
+                    <ul>
+                    <li><strong>Kadyr Toktogulov</strong>, email: <a href="mailto:Kadyr.T@celanetwork.org">Kadyr.T@celanetwork.org</a> (for administrative, program & logistics matters)</li>
+                    <li><strong>Zarina Chekirbaeva</strong>, email: <a href="mailto:zarina@celanetwork.org">zarina@celanetwork.org</a> (for administrative, program & logistics matters)</li>
+                    <li><strong>Zara Janibekyan</strong>, email:  <a href="mailto:zara@celanetwork.org">zara@celanetwork.org</a> (for financial matters)</li>
+                    </ul>
+                    <strong>For post-Reunion related questions</strong>, please contact <a href="mailto:Ketevan83@gmail.com">Ketevan83@gmail.com</a> and CC <a href="mailto:ia_tsulaia@yahoo.com">ia_tsulaia@yahoo.com</a>.
+                </div>
+                <div class="uk-margin">
+                    <h4 class="cela-text-red uk-text-bold">COVID-19 VACCINATION</h4>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-italic" for="form-stacked-select">Have you been vaccinated?</label>
+                    <select class="uk-select" name="covidVaccinated" id="covidVaccinated">
+                        <option value="null">Select your answer</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="uk-margin uk-hidden" id="covidOption">
+                    <label class="uk-form-label uk-text-italic" for="form-stacked-select">If No, do you plan to get vaccinated by August?</label>
+                    <select class="uk-select" name="covidDoVaccinate" id="covidDoVaccinate">
+                        <option value="null">Select your answer</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="uk-margin">
+                    <h4 class="uk-text-bold cela-text-blue uk-text-center"><span>Registration Fee Amount: <span id="regFee">0 USD</span></span></h4>
+                </div>
+                <p>
+                    We highly encourage everyone to get vaccinated against Covid to make our experience at CELA safe for everyone. Otherwise, regular testing will likely be performed prior and during the Reunion and post-Reunion program to prevent the spread of infection among participants. We need to know an approximate number of participants who will be vaccinated.
+                </p>
+                <h3 class="cela-text-blue uk-text-center uk-text-bold">WE LOOK FORWARD TO SEEING YOU IN GEORGIA! </h3>
+
+
 
                 <hr class="uk-divider-icon">
-
-                <div class="uk-margin uk-text-italic">
-                    <p>I understand that the CELA Academy is an intensive leadership development program that requires
-                        my full-time commitment as a facilitator for nearly 2 weeks, up to 14 hours a day, in the
-                        service of the program, the participants and their needs. I further understand that I have a
-                        special responsibility to be a positive leadership role model and network ambassador and that my
-                        actions will be reflective of my commitment at all times. The attendance period includes the
-                        Facilitator Academy, starting with the opening dinner on the evening of 30 July, and the entire
-                        10-day Academy through graduation and the final dinner on 11 August. <span
-                            class="uk-text-danger">Additionally, I commit to participate in the monthly pre-LA
-                            Facilitator Corps virtual meetings.</span></p>
-                    <p>I also understand that I am responsible for arranging my travel to and from Tbilis and that CELA
-                        will provide transportation to and from the airport to the University, and my lodging and food
-                        expenses from 30 July to 12 August. All other expenses are my responsibility.</p>
-                </div>
                 <div class="uk-margin">
                     <div class="uk-grid">
                         <div class="uk-width-auto@m uk-first-column">

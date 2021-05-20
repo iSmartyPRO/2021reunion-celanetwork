@@ -1,29 +1,55 @@
 <!-- LEFT BAR -->
 <aside id="left-col" class="uk-light uk-visible@m">
   <div class="left-logo uk-flex uk-flex-middle uk-margin-medium-top">
-    <img class="custom-logo" src="/assets/cela_logo_white.svg" alt="">
+    <img class="custom-logo" src="/assets/cela_logo_white.svg" alt="" />
   </div>
-  <div class="left-content-box  content-box-dark">
-    <h4 class="uk-text-center uk-margin-remove-vertical text-light">Hello, {{userName}}!</h4>
+  <div class="left-content-box content-box-dark">
+    <h4 class="uk-text-center uk-margin-remove-vertical text-light">Hello,
+      {{userName}}!</h4>
   </div>
 
   <div class="left-nav-wrap">
     <ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav>
       <li class="uk-nav-header">ACTIONS</li>
-      <li><a href="/cp"><span data-uk-icon="icon: comments" class="uk-margin-small-right"></span>Dashboard</a></li>
-      <li><a href="/cp/applications"><span data-uk-icon="icon: users" class="uk-margin-small-right"></span>Application
-          Forms</a></li>
-      <li><a href="/cp/users"><span data-uk-icon="icon: users" class="uk-margin-small-right"></span>Users</a></li>
-      <li><a href="/cp/logs"><span data-uk-icon="icon: album" class="uk-margin-small-right"></span>Logs</a></li>
+      <li><a href="/cp"><span
+            data-uk-icon="icon: comments"
+            class="uk-margin-small-right"
+          ></span>Dashboard</a></li>
+      <li><a href="/cp/registrations"><span
+            data-uk-icon="icon: users"
+            class="uk-margin-small-right"
+          ></span>Registrations</a></li>
+      <li><a href="/cp/users"><span
+            data-uk-icon="icon: users"
+            class="uk-margin-small-right"
+          ></span>Users</a></li>
+      <li><a href="/cp/logs"><span
+            data-uk-icon="icon: album"
+            class="uk-margin-small-right"
+          ></span>Logs</a></li>
     </ul>
   </div>
   <div class="bar-bottom">
-    <ul class="uk-subnav uk-flex uk-flex-center uk-child-width-1-5" data-uk-grid>
+    <ul
+      class="uk-subnav uk-flex uk-flex-center uk-child-width-1-5"
+      data-uk-grid
+    >
       <li>
-        <a href="/" class="uk-icon-link" data-uk-icon="icon: home" title="Front Site" data-uk-tooltip></a>
+        <a
+          href="/"
+          class="uk-icon-link"
+          data-uk-icon="icon: home"
+          title="Front Site"
+          data-uk-tooltip
+        ></a>
       </li>
       <li>
-        <a href="/auth/logout" class="uk-icon-link" data-uk-tooltip="Sign out" data-uk-icon="icon: sign-out"></a>
+        <a
+          href="/auth/logout"
+          class="uk-icon-link"
+          data-uk-tooltip="Sign out"
+          data-uk-icon="icon: sign-out"
+        ></a>
       </li>
     </ul>
   </div>
