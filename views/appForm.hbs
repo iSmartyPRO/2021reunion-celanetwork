@@ -144,7 +144,7 @@
             <p>The registration fee payment should be done through bank transfer, PayPal or credit card. For all financial issues, please contact Zara Janibekyan at <a href="mailto:zara@celanetwork.org">zara@celanetwork.org</a>.  <span class="cela-text-red">The deadline for the payment is MAY 31, 2021.</span></p>
             <h4 class="cela-text-blue">VISAS</h4>
             <p>Please check if your passport requires visa to enter Georgia.  If you do require a visa, then please start the process as soon as possible. Please visit <a href="https://www.geoconsul.gov.ge/en/visaInformation">https://www.geoconsul.gov.ge/en/visaInformation</a> to apply for your e-visa to Georgia.</p>
-            <p>Should you have any questions related to visa matters please contact KIU member <a href="mailto:mariam.naneishvili@kiu.edu.ge">mariam.naneishvili@kiu.edu.ge</a> and CC <a href="mailto:Kadyr.T@celanetwork.org">Kadyr.T@celanetwork.org</a> and <a href="mailto:zarina@celanetwork.org">zarina@celanetwork.org</a>.</p>
+            <p>Should you have any questions related to visa matters, please contact KIU member <a href="mailto:mariam.naneishvili@kiu.edu.ge">mariam.naneishvili@kiu.edu.ge</a> and CC <a href="mailto:Kadyr.T@celanetwork.org">Kadyr.T@celanetwork.org</a> and <a href="mailto:zarina@celanetwork.org">zarina@celanetwork.org</a>.</p>
         </div>
     </div>
 </div>
@@ -231,7 +231,16 @@
                         <option value="sharedRoomSvaneti">Shared room + meals + event (Shared rooms are available only for couples due to covid-related protocol)</option>
                     </select>
                 </div>
-                <span class="uk-text-small uk-text-meta">*If due to COVID, the region will be locked down 48 hours prior to the trip, 20% of fee will not be reimbursed.</span>
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-italic" for="form-stacked-select">Optional activities will be offered in the morning of August 17 in Svaneti. Please select one or none of the options below. Fees must be paid at the sight.</label>
+                    <select class="uk-select" name="optionalActivity" id="optionalActivity">
+                        <option value="null">None</option>
+                        {{#optionalActivity}}
+                        <option value="{{this}}">{{this}}</option>
+                        {{/optionalActivity}}
+                    </select>
+                </div>
+                <span class="uk-text-small uk-text-meta">*If due to COVID the region will be locked down 48 hours prior to the trip, 20% of fee will not be reimbursed.</span>
                 <h4 class="cela-text-blue">If you are planning to invite a spouse/partner, please provide information below:</h4>
                 <fieldset class="uk-fieldset">
                     <div class="uk-margin">
@@ -254,16 +263,7 @@
 
                 </fieldset>
                 <div class="uk-margin">
-                    <label class="uk-form-label uk-text-italic" for="form-stacked-select">Optional activities will be offered in the morning of August 17 in Svaneti. Please select one or none of the options below. Fees must be paid at the sight.</label>
-                    <select class="uk-select" name="optionalActivity" id="optionalActivity">
-                        <option value="null">None</option>
-                        {{#optionalActivity}}
-                        <option value="{{this}}">{{this}}</option>
-                        {{/optionalActivity}}
-                    </select>
-                </div>
-                <div class="uk-margin">
-                    <p><u>Your registration fee includes</u> accommodation meals, meeting materials, transport and cultural activities during the Reunion and Post-Reunion, if selected.</p>
+                    <p><u>Your registration fee includes</u> accommodation, meals, meeting materials, transport and cultural activities during the Reunion and Post-Reunion, if selected.</p>
 
                     <p>For any questions pertaining to the Reunion and post-Reunion, feel free to contact:</p>
                     <ul>
@@ -338,9 +338,16 @@
 
 <div class="uk-section uk-hidden" id="congratsWindow">
     <div class="uk-container">
-        <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin">
-            <h3 class="uk-card-title uk-text-center uk-text-success uk-text-bold">Congratulation!</h3>
-            <p class="uk-text-center">Your Application Form is Submitted</p>
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin-large uk-padding-large">
+            <h3 class="uk-card-title uk-text-center uk-text-success uk-text-bold">Congratulations!</h3>
+            <p class="uk-text-center uk-text-bold">Your registration form has been submitted successfully.</p>
+            <p>
+            <p class="uk-text-center">To complete your registration and payment (you can pay by a credit card, PayPal or bank wire), please follow this link. <br><span class="cela-text-red">The deadline for the payment is MAY 31, 2021.</span></p>
+            <p class="uk-text-center">For Reunion-related questions, please contact us at <a href="mailto:info@celanetwork.org">info@celanetwork.org</a>. </p>
+            <p class="uk-text-center">
+            With best regards,<br>
+            CELA team
+            </p>
         </div>
     </div>
 </div>
